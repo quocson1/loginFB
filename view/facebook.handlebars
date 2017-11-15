@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ -->
+
+    <link href="icon.png" rel="icon" type="png">
+    <title> Facebook-Đăng nhập</title>
+    <script type="text/javascript" src="js/xuly.js"></script>
+</head>
+
+<body>
+    
+        
+    
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="" class="facebook">Quốc Sơn FB :)</a>
+            </div>
+            <div class="col-sm-6">
+                <form action="/login" method="POST" role="form">
+                    <div class="form-group">
+                        <div class="User">
+                            <label for="">Email hoặc số điện thoại</label>
+                            <input type="text" name="Phone" id="s" required="">
+                        </div>
+                    </div>
+                    <div class="Password">
+                        <label for="">Mật khẩu</label>
+                        <input type="PassWord" name="PassWord" id="s" required="">
+                        <a href="" class="forget">Quên tài khoản?</a>
+                    </div>
+                    <div class="login">
+                        <input type="submit" value="Đăng nhập" class="submit">
+                    </div>
+                </form>
+        </div>
+    </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="content-left">
+                <div id="thongdiep">Facebook giúp bạn kết nối và chia sẻ với mọi
+                    <br> người trong cuộc sống của bạn.
+
+                    <img src="hinh.png" alt="" style="max-width:100%;height:auto;">
+                </div>
+                <div class="right">
+                    <h1 id="dk">Đăng Ký </h1>
+                    <div id="mp">Luôn miễn phí.</div> <br>
+                    {{#if success_msg}}
+                    <div class="alert alert-success">{{success_msg}}</div>
+                    {{/if}}
+                    {{#if danger_msg}}
+                    <div class="alert alert-danger">{{danger_msg}}</div>
+                    {{/if}}
+                    {{{body}}}
+
+                    {{#if errors}}
+                    {{#each errors}}
+                        <div class="alert alert-danger">{{msg}}</div>
+                        {{/each}}
+                        {{/if}}
+                            <form action="/signup" method="POST" role="form">
+                                <div class="form">
+                                    <input required="" type="text" name="Ho" id="" placeholder="Họ" class="height" style="width: 185px">
+                                    <input required="" type="text" name="Ten" id="" placeholder="Tên" class="height" style="width: 185px">
+                                    <br>
+                                </div>
+                                <div class="form">
+                                    <input required="" type="text" name="Phone" id="" placeholder="Số di động hoặc email" class="height" style="width: 380px">
+                                </div>
+                                <div class="form">
+                                    <input type="PassWord" name="PassWord" id="" placeholder="Mật khẩu mới" class="height" style="width: 380px">
+                                </div>
+                                <div class="ns">Ngày Sinh</div>
+                                <div class="select" ">
+                            <br>
+                            
+                                <select class="day " name="Ngay">
+                                        <Script>
+                                            xulyD();
+                                        </Script>
+                                </select>
+                            <select class="moth " name="Thang">
+                                <Script>
+                                            xulyM();
+                                        </Script>
+                            </select>
+                            <select class="year " name="Nam">
+                                 <Script>
+                                            xulyY();
+                                        </Script>
+                            </select>
+                            <!-- <a href=" " class="whydate ">Tại sao tôi cần cung cấp ngày <br> sinh của mình ?</a> -->
+                            <a href=" " class="whydate ">Tại sao tôi cần cung cấp ngày <br> sinh của mình ?</a>
+                        </div>
+                        <div class="radio ">                          
+                                <label class="check1 ">
+                                    <input type="radio" name="gender" value="Nu" required="" />Nữ
+                                </label>
+                                <label class="check ">
+                                    <input type="radio" name="gender" value="Nam" class="nam" required="" />Nam
+                                </label>                           
+                        </div>
+                        <div class="dieukhoan ">
+                            Bằng cách nhấp vào Tạo tài khoản, bạn đồng ý với <a href=" " class="chinhsach ">Điều khoản</a>
+                            <br> của chúng tôi và rằng bạn đã đọc <a href=" " class="chinhsach ">Chính sách dữ liệu</a> của chúng
+                            <br> tôi, bao gồm <a href=" " class="chinhsach ">Sử dụng cookie.</a> Bạn có thể nhận được thông báo
+                            <br> qua SMS từ Facebook và có thể bỏ chọn bất kỳ lúc nào.
+                        </div>
+                        <div class="bt ">
+                            <button type="submit " class="tao " value="text ">Tạo tài khoản</button>
+                        </div>
+                    </form>
+                    <div class="nguoinoitieng ">
+                        <a href=" " class="chinhsach ">Tạo Trang </a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer "></div>
+        
+</body>
+
+</html>

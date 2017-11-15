@@ -1,0 +1,251 @@
+
+
+*{margin:0;padding:0}
+
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+#header{
+    background-color: #3b5998;
+    height: 80px;
+    width: 100%;
+    margin-top: none
+
+}
+.logo{
+    float: left;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left: 170px;
+    line-height: 60px;
+    width: 580px;
+    height: 80px;
+}
+.User{
+    float: left;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 15px;
+    font-size: 13px;
+    width: 180px;
+
+    
+}
+.Password{
+    font-family: sans-serif;
+    float: left;
+    color: white;
+    padding-top: 15px;
+    font-size: 13px;
+    width: 180px;
+
+    
+}
+.login{
+    padding-top: 9px;
+}
+.forget{
+    font-family: sans-serif;
+
+}
+#s{
+    color: black;
+    width: 150px;
+    height: 20px;
+}
+#content{
+    background: linear-gradient(#FEFEFE, #D7DCEA);
+    height: 800px;
+}
+
+
+#thongdiep{
+    margin-top: 40px;
+    color: #0E385F;
+    float: left;
+    width: 580px;
+    font-size: 21px;
+    font-family: sans-serif;
+    
+    font-weight: bold;
+    
+}
+.right{
+    margin-top: 20px;
+    float: left;
+
+}
+.right #mp{
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 21px;
+}
+.right #dk{
+    font-family: sans-serif;
+}
+.right .form{
+    margin-top: 15px;
+
+}
+
+
+.right .height{
+    height: 35px;
+    border-radius: 5px;
+}
+.right .select{
+    width: 579px;
+    height: 50px;
+}
+
+.ns{
+    font-family: sans-serif;
+     margin-top: 20px;
+
+}
+.check{
+    font-family: sans-serif;
+    margin-left: 20px;
+    font-size: 16px;
+   
+}
+.check1{
+    font-family: sans-serif;
+    margin-left: 8px;
+    font-size: 16px;
+   
+}
+.nam{
+    margin-top: 20px;
+}
+
+.edit{
+    font-size: 21px;
+    color: red;
+    float: left;
+
+}
+.day{
+    width: 60px;
+    height: 27px;
+    float: left;
+}
+.moth{
+    width: 80px;
+    height: 27px;
+    float: left;
+}
+.year{
+    width: 60px;
+    height: 27px;
+    float: left;
+}
+.whydate{
+    font-size: 13px;
+    padding-left: 20px;
+    float: left;
+    color: #3678BE;
+}
+.dieukhoan{
+
+    margin-top: 20px;
+    font-size: 13px;
+    color: #7D7D7E;
+}
+
+.chinhsach{
+     color: #3678BE;
+}
+
+
+.tao{
+    font-family: sans-serif;
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    background-color: #6AA656;
+    border-radius: 7px;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    font-size: 20px;
+}
+.facebook{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 39px;
+    padding-bottom: -14px;
+    padding-top: 19px;
+}
+
+.nguoinoitieng{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #7D7D7E;
+     font-weight: bold;
+}
+.forget{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 3px;
+    float: left;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.submit{  
+    font-family: sans-serif;  
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: top;
+    white-space: nowrap;
+    background-color: #4267b2;
+    border-color: #29487d;
+    margin-top: 20px;
+    height: 24px;
+    margin-left: -14px;
+    color: white
+}
+
+
+
+
+    
